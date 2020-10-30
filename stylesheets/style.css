@@ -150,10 +150,10 @@ ul {
   footer {
     background-color: #F5F5F5;
   }
-  footer div img {
+  footer #menu1 img {
     width: 100px;
   }
-  footer div div {
+  footer #menu1 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165,21 +165,21 @@ ul {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
-  footer div div #footer-left {
+  footer #menu1 div #footer-left {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     font-size: 1.1rem;
   }
-  footer div div #footer-right {
+  footer #menu1 div #footer-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     font-size: 1.1rem;
   }
-  footer div #footer-block {
+  footer #menu2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -194,20 +194,59 @@ ul {
     font-size: 1.1rem;
     padding: 0px;
   }
-  footer div ul {
+  footer #menu2 ul {
     margin: 0px;
   }
-  footer div ul li {
+  footer #menu2 ul li {
     margin-bottom: 10px;
     padding: 10px 0px 10px 0px;
   }
-  footer .fab::after {
+  footer #menu3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 0 12.5px 0;
+  }
+  footer #menu3 img {
+    width: 25px;
+    height: 25px;
+    margin-top: -2px;
+  }
+  footer #menu3 * {
+    margin-left: 10px;
+  }
+  footer #menu4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0 12.5px 0;
+  }
+  footer #menu4 * {
+    margin-left: 10px;
+  }
+  .fab::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     display: inline-block;
   }
-  footer .fab::after .fa-twitter, footer .fab::after .fa-facebook-f, footer .fab::after .fa-youtube {
+  .fab::after .fa-twitter, .fab::after .fa-facebook-f, .fab::after .fa-youtube {
     display: inline;
   }
 }

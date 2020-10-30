@@ -154,8 +154,7 @@ ul{
 
     footer{
         background-color: $color-gray-soft;
-
-        div{
+        #menu1{
             img{
                 width: 100px;
             }
@@ -178,15 +177,15 @@ ul{
                 }
             }
 
-            #footer-block{
-                display: flex;
-                flex-direction: row;
-                //background-color: purple;
-                justify-content: space-evenly;
-                font-weight: bold;
-                font-size: 1.1rem;
-                padding: 0px;
             }
+        #menu2{
+            display: flex;
+            flex-direction: row;
+            //background-color: purple;
+            justify-content: space-evenly;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0px;
 
             ul{
                 margin: 0px;
@@ -197,6 +196,36 @@ ul{
             }
         }
 
+        #menu3{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 0 12.5px 0;
+
+            img{
+                width: 25px;
+                height: 25px;
+                margin-top: -2px;
+            }
+
+            *{
+                margin-left: 10px;
+            }
+        }
+
+        #menu4{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px 0 12.5px 0;
+            *{
+                margin-left: 10px;
+            }
+        }
+    }
+
         .fab::after{
             display: flex;
             display: inline-block;
@@ -205,5 +234,4 @@ ul{
                 display: inline;
             }
         }
-    }
 }
