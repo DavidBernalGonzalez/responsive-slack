@@ -1,3 +1,9 @@
+/******************************************
+*************** VARIABLES *****************
+******************************************/
+/******************************************
+************ GENERAL STYLES ***************
+******************************************/
 body {
   margin: 0.5;
   padding: 0.5;
@@ -20,6 +26,9 @@ ul {
   list-style: none;
 }
 
+/******************************************
+************** MOBILE VIEW ****************
+******************************************/
 @media screen and (max-width: 768px) {
   nav {
     position: -webkit-sticky;
@@ -244,6 +253,15 @@ ul {
   }
   .fab::after .fa-twitter, .fab::after .fa-facebook-f, .fab::after .fa-youtube {
     display: inline;
+  }
+}
+
+/******************************************
+***************** IPAD ********************
+******************************************/
+@media screen and (max-width: 961px) and (min-width: 767px) {
+  body {
+    background-color: pink;
   }
 }
 /*# sourceMappingURL=style.css.map */
