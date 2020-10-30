@@ -165,19 +165,15 @@ ul {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
-  footer #menu1 div #footer-left {
+  footer #menu1 div #footer-left, footer #menu1 div #footer-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     font-size: 1.1rem;
   }
-  footer #menu1 div #footer-right {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    font-size: 1.1rem;
+  footer #menu1 div #footer-left ul, footer #menu1 div #footer-right ul {
+    margin: 2.5%;
   }
   footer #menu2 {
     display: -webkit-box;
