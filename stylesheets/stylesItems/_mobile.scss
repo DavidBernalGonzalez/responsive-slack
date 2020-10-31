@@ -1,11 +1,12 @@
 /******************************************
-************** MOBILE VIEW **************** = @media screen and (max-width: 768px) {}
+****** MOBILE VIEW (max-width: 768px) *****
 ******************************************/
 
 body {
     margin: 0.5;
     padding: 0.5;
     background-color: $color-white;
+    min-width: 280px;
 }
 
 ul{
@@ -67,7 +68,7 @@ header{
             height: 35px;
             font-weight: bold;
         }
-    
+
         button{
             width: 100%;
             justify-content: center;
@@ -132,7 +133,7 @@ section{
                 padding-bottom: 15px;
             }
         }
-       
+
         img:not(:last-child){
             border-bottom: 1px solid $color-gray;
         }

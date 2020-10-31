@@ -1,0 +1,6 @@
+/********************************************************
+* SMALL SCREEN (max-width: 961px) and (min-width: 767px)*   →  (Ipad)
+********************************************************/
+@media screen and (max-width: 961px) and (min-width: 767px) {
+    @import "SmallValues";
+}
