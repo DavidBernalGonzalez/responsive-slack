@@ -94,6 +94,7 @@ header div button {
   padding: 10px 0px 10px 0px;
   font-weight: bold;
   border-radius: 3px;
+  height: 40px;
 }
 
 header .center {
@@ -121,6 +122,18 @@ section article {
           align-items: center;
   margin: 5%;
   padding-bottom: 0px;
+}
+
+section article input {
+  background-color: white;
+  border-color: #6D6F7A;
+  width: 98.5%;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 35px;
+  font-weight: bold;
 }
 
 section article button {
@@ -162,13 +175,28 @@ section article img:not(:last-child) {
   background-color: white;
 }
 
-.sectionWhite h2 {
+.sectionWhite article {
+  margin-bottom: 10px;
+}
+
+.sectionWhite article h2 {
   font-weight: bold;
   margin: 25px 0px 0px 0px;
 }
 
-.sectionWhite button {
+.sectionWhite article input {
+  background-color: white;
   border-color: #6D6F7A;
+  width: 98.5%;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.sectionWhite article button {
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -178,6 +206,7 @@ section article img:not(:last-child) {
   padding: 10px 0px 10px 0px;
   font-weight: bold;
   border-radius: 3px;
+  height: 40px;
 }
 
 footer {
@@ -367,7 +396,6 @@ footer #menu4 * {
         grid-template-columns: 50% 50%;
     width: 88%;
     justify-items: center;
-    padding-bottom: 2.5%;
   }
   section article div img {
     margin: 5%;
@@ -378,7 +406,8 @@ footer #menu4 * {
     border-bottom: 1px solid #6D6F7A;
     padding: 22%;
     margin-top: -9%;
-    justify-items: center;
+    justify-items: right;
+    padding-left: 50%;
   }
   section article div img:nth-of-type(2n-1) {
     border-right: 1px solid #6D6F7A;
@@ -388,14 +417,42 @@ footer #menu4 * {
   }
   section article div img:nth-of-type(5) {
     border-bottom: none;
+    margin-bottom: 25px;
   }
   section article div img:nth-of-type(6) {
     border-bottom: none;
+    margin-bottom: 25px;
   }
-  .sectionWhite button {
-    width: 257.5px;
+  .sectionWhite {
+    width: 100%;
+  }
+  .sectionWhite article {
+    margin-top: 40px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 45% 25%;
+        grid-template-columns: 30% 45% 25%;
+  }
+  .sectionWhite article h2 {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .sectionWhite article input {
+    width: 175px;
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 12.5px;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+  .sectionWhite article button {
+    width: 175px;
     height: 65.5px;
-    margin-bottom: 5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -ms-grid-column-align: left;
+        justify-self: left;
   }
   footer #menu1 {
     display: -webkit-box;
