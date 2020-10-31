@@ -780,7 +780,7 @@ footer #menu4 * {
     background-color: orange;
   }
   section article div {
-    width: 675px;
+    width: 660px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 225px 225px 225px;
@@ -808,7 +808,7 @@ footer #menu4 * {
     height: 75px;
     padding: 22%;
     margin-top: -14px;
-    padding-left: 25.5%;
+    padding-left: 25.3%;
     border-right: 1px solid #6D6F7A;
     border-bottom: none;
     border-right: 1px solid #6D6F7A;
