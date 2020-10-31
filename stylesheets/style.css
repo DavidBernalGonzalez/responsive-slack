@@ -168,6 +168,11 @@ footer {
   background-color: #F5F5F5;
 }
 
+footer #menu1 {
+  width: 100%;
+  background-color: white;
+}
+
 footer #menu1 img {
   width: 100px;
 }
