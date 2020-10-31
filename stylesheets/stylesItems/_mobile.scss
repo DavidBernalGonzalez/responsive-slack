@@ -1,16 +1,6 @@
 /******************************************
-*************** VARIABLES *****************
-******************************************/
-$color-gray: #6D6F7A;
-$color-gray-soft: #F5F5F5;
-$color-white: white;
-$color-blue: #1F359B;
-$color-blue-soft: #4049AA;
-
-/******************************************
 ************** MOBILE VIEW **************** = @media screen and (max-width: 768px) {}
 ******************************************/
-//-------------------------------------------------
 
 body {
     margin: 0.5;
@@ -65,26 +55,28 @@ header{
         margin-bottom: 2.5rem;
     }
 
-    input{
-        background-color: $color-white;
-        border-color: $color-gray;
-        width: 98.5%;
-        text-align: center;
-        border-radius: 3px;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        height: 35px;
-        font-weight: bold;
-    }
-
-    button{
-        width: 100%;
-        justify-content: center;
-        background-color: $color-blue-soft;
-        color: white;
-        padding: 10px 0px 10px 0px;
-        font-weight: bold;
-        border-radius: 3px;
+    div{
+        input{
+            background-color: $color-white;
+            border-color: $color-gray;
+            width: 98.5%;
+            text-align: center;
+            border-radius: 3px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            height: 35px;
+            font-weight: bold;
+        }
+    
+        button{
+            width: 100%;
+            justify-content: center;
+            background-color: $color-blue-soft;
+            color: white;
+            padding: 10px 0px 10px 0px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
     }
 
     .center{
@@ -103,7 +95,7 @@ section{
         flex-direction: column;
         align-items: center;
         margin: 5%;
-        padding-bottom: 25px;
+        padding-bottom: 0px;
 
         button{
             border: 1px solid $color-blue;
@@ -116,17 +108,21 @@ section{
             font-weight: bold;
         }
 
-        img{
-            width: 50%;
-            height: 25%;
-            margin-top: 15px;
-            padding-bottom: 15px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 50%;
+                height: 25%;
+                margin-top: 15px;
+                padding-bottom: 15px;
+            }
         }
-
+       
         img:not(:last-child){
             border-bottom: 1px solid $color-gray;
         }
-
     }
 }
 
@@ -230,15 +226,4 @@ footer{
     .fa-twitter, .fa-facebook-f, .fa-youtube{
         display: inline;
     }
-}
-
-/******************************************
-***************** IPAD ********************
-******************************************/
-@media screen and (max-width: 961px) and (min-width: 767px) {
-    body{
-        background-color: pink;
-    }
-
-    //961px > width > 767px
 }

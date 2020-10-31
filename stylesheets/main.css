@@ -4,6 +4,9 @@
 /******************************************
 ************** MOBILE VIEW **************** = @media screen and (max-width: 768px) {}
 ******************************************/
+/******************************************
+************** MOBILE VIEW **************** = @media screen and (max-width: 768px) {}
+******************************************/
 body {
   margin: 0.5;
   padding: 0.5;
@@ -69,7 +72,7 @@ header h2 {
   margin-bottom: 2.5rem;
 }
 
-header input {
+header div input {
   background-color: white;
   border-color: #6D6F7A;
   width: 98.5%;
@@ -81,7 +84,7 @@ header input {
   font-weight: bold;
 }
 
-header button {
+header div button {
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -117,7 +120,7 @@ section article {
       -ms-flex-align: center;
           align-items: center;
   margin: 5%;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
 }
 
 section article button {
@@ -131,7 +134,20 @@ section article button {
   font-weight: bold;
 }
 
-section article img {
+section article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section article div img {
   width: 50%;
   height: 25%;
   margin-top: 15px;
@@ -283,11 +299,198 @@ footer #menu4 * {
 }
 
 /******************************************
-***************** IPAD ********************
+***************** IPAD ********************   = 961px > width > 767px
 ******************************************/
 @media screen and (max-width: 961px) and (min-width: 767px) {
-  body {
-    background-color: pink;
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header div input {
+    width: 250px;
+    height: 60px;
+    margin: 0px;
+    margin: 2.5vh 0;
+  }
+  header div button {
+    width: 257.5px;
+    height: 65.5px;
+    margin: 2.5vh 0;
+  }
+  section article {
+    margin-bottom: 1vh;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+  }
+  section article button {
+    width: 257.5px;
+    height: 65.5px;
+    margin-bottom: 10%;
+  }
+  section article div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    width: 100%;
+    justify-items: center;
+  }
+  section article div img {
+    margin: 5%;
+    width: 220px;
+    height: 100px;
+  }
+  section article div img:nth-of-type(2n) {
+    border-bottom: 1px solid #6D6F7A;
+    padding: 20%;
+    margin-top: -9%;
+  }
+  section article div img:nth-of-type(2n-1) {
+    border-right: 1px solid #6D6F7A;
+    border-bottom: 1px solid #6D6F7A;
+    padding: 20%;
+    margin-top: -9%;
+  }
+  section article div img:nth-of-type(5) {
+    border-bottom: none;
+  }
+  section article div img:nth-of-type(6) {
+    border-bottom: none;
+  }
+  .sectionWhite button {
+    width: 257.5px;
+    height: 65.5px;
+    margin-bottom: 5%;
+  }
+  footer #menu1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer #menu1 img {
+    width: 75px;
+    height: 75px;
+    top: 0;
+  }
+  footer #menu1 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 0.75vh;
+  }
+  footer #menu1 div #footer-left, footer #menu1 div #footer-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 1.1rem;
+  }
+  footer #menu1 div #footer-left ul .title-li, footer #menu1 div #footer-right ul .title-li {
+    font-weight: bold;
+  }
+  footer #menu1 div #footer-left ul li, footer #menu1 div #footer-right ul li {
+    margin-bottom: 1vh;
+  }
+  footer #menu2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0px;
+  }
+  footer #menu2 ul {
+    margin: 0px;
+  }
+  footer #menu2 ul li {
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
+  }
+  footer #menu3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 0 12.5px 0;
+  }
+  footer #menu3 img {
+    width: 25px;
+    height: 25px;
+    margin-top: -2px;
+  }
+  footer #menu3 * {
+    margin-left: 10px;
+  }
+  footer #menu4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0 12.5px 0;
+  }
+  footer #menu4 * {
+    margin-left: 10px;
+  }
+  .fab::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+  }
+  .fab::after .fa-twitter, .fab::after .fa-facebook-f, .fab::after .fa-youtube {
+    display: inline;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
