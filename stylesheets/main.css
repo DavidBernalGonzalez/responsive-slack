@@ -777,6 +777,7 @@ footer #menu4 * {
     margin-bottom: 10px;
   }
   section article div {
+    margin-left: -65px;
     width: 660px;
     display: -ms-grid;
     display: grid;

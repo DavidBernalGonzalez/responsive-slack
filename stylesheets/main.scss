@@ -27,11 +27,12 @@ $color-blue-soft: #4049AA;
     section{
         article{
             div{
+                margin-left: -65px;
                 width: 660px;
                 display: grid;
                 grid-template-columns: 225px 225px 225px;
                 justify-items: center;
-                margin-left: -50px;
+
                 img{
                     width: 165px;
                     height: 75px;
@@ -86,7 +87,6 @@ $color-blue-soft: #4049AA;
                     padding-left: 82.4%;
                     border-bottom: none;
                 }
-*/
             }
         }
     }
