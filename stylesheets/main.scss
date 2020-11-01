@@ -25,7 +25,6 @@ $color-blue-soft: #4049AA;
     @import "stylesItems/SmallValues";
     //---------------------------------------------------------
     section{
-        background-color: orange;
         article{
             div{
                 width: 660px;
@@ -37,6 +36,7 @@ $color-blue-soft: #4049AA;
                     height: 75px;
                     margin: 0px;
                     padding: 0px;
+
                 }
 
                 img:nth-child(2){
@@ -85,7 +85,7 @@ $color-blue-soft: #4049AA;
                     padding-left: 82.4%;
                     border-bottom: none;
                 }
-
+*/
             }
         }
     }
