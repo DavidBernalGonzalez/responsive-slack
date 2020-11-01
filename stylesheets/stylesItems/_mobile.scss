@@ -83,10 +83,17 @@ header{
 
     .center{
         text-align: center;
+        display: block;
     }
-
-    img{
-        width: 95%;
+    
+    #oculto{
+        img{
+            width: 95%;
+        }
+    
+        #only-xl{
+            display: none;
+        }
     }
 }
 

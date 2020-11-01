@@ -1,0 +1,69 @@
+@media screen and (min-width: 1200px)  {
+    //---------------------------------------------------------
+    @import "stylesItems/SmallValues";
+    //---------------------------------------------------------
+    @import "stylesItems/mediumValues";
+    //---------------------------------------------------------
+    nav{
+        img{
+            height: 60px;
+            width: 100px;
+            padding-left: 5%;
+        }
+    
+        ul{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 50px;
+            li:last-child{
+                
+                    border: 1px solid black;
+                    border-radius: 3px;
+                    padding: 2px;
+                
+            }
+        }
+    
+        .fa-times{ //X icon
+            display: none;
+        }
+    
+        .fa-bars{
+            display: none;
+        }
+    }
+
+    header{
+        #noOculto{
+            display: none;
+        }
+        .center{
+            display: none;
+        }
+        #oculto{
+            display: flex;
+            flex-direction: row;
+
+            img{
+                width: 25px;
+                flex: 1 1 40%;
+            }
+    
+            #only-xl{
+                width: 50%;
+                display : block !important;
+                flex: 1 1 40%;
+            }
+        }
+    }
+
+    .sectionWhite{
+        background-color: $color-white;
+        article{
+            p{
+                grid-column: 3;
+            }
+        }
+    }
+}
